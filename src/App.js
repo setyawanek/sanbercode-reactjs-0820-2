@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import BuahBuahan from './tugas-12/input';
+import BuahBuahan from './tugas-13/axios';
+// import BuahBuahan from './tugas-12/input';
 // import FormBuah from './tugas-9/tugas9'
 // import UserInfo from './tugas-10/Userinfo';
 // import HargaBuah from './tugas-10/tugas10'
@@ -29,6 +30,7 @@ function App() {
         <BuahBuahan/>
       </div>
 
+      
   );
 }
 
