@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import './input.css'
 
-// Bener
+
 const BuahBuahan = () => {
   const [dataHargaBuah, setDataHargaBuah] = useState(null)
   const [inputNama, setInputNama] = useState('')
@@ -11,7 +11,7 @@ const BuahBuahan = () => {
   const [selectedID, setSelectedID] = useState(0)
   const [statusForm, setStatusForm] = useState('create')
 
-  // Bener
+ 
   useEffect(() => {
     if (dataHargaBuah === null) {
       axios.get(`http://backendexample.sanbercloud.com/api/fruits`)
@@ -91,7 +91,7 @@ const BuahBuahan = () => {
     setInputBerat("")
   }
 
-  // Bener
+  
   return (
     <>
       <div className="Daftarbuah">
