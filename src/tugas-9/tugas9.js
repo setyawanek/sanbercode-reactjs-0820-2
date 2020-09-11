@@ -5,7 +5,7 @@ class FormBuah extends React.Component{
         return(
             <div className="container">
                 <div className="form-border">
-                    <h2 className="label text-center">Form Pembelian Buah</h2>
+                    <h2 className="">Form Pembelian Buah</h2>
                     <form action="">
                     <table>
                         <tr>
@@ -19,7 +19,7 @@ class FormBuah extends React.Component{
                             <input type="checkbox" id="jeruk" name="jeruk"/><label for="jeruk">Jeruk</label><br></br>
                             <input type="checkbox" id="nanas" name="nanas"/><label for="nanas">Nanas</label><br></br>
                             <input type="checkbox" id="salak" name="salak"/><label for="salak">Salak</label><br></br>
-                            <input type="checkbox" id="anggur" name="anggur"/><label for="anggur">Anggur</label>
+                            <input type="checkbox" id="anggur" name="anggur"/><label for="anggur">Anggur</label><br></br>
                         </td>
                         </tr>
                         <tr>

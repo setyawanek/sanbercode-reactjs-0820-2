@@ -1,0 +1,66 @@
+ul{
+    list-style-type: none;
+    width: 90%;
+}
+  
+ul li{
+    display: inline;
+    margin-left: 10px;
+}
+  
+ul li a{
+    text-decoration: none;
+    color: #aaa;
+}
+  
+nav{
+    display: flex;
+    border-bottom: 1px solid black;
+    text-align: center;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    row-gap: 5px;
+}
+
+form input {
+    outline: none;
+}
+
+form button {
+    background-color: rgb(135, 180, 222);
+    margin-top: 10px;
+    width: 80px;
+    padding: 5px 0 ;
+    border: 1px solid grey;
+    outline: none;
+    font-weight: 600;
+}
+
+.button{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: aqua;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.box{
+    color:blue;
+    padding: 10px;
+}
+
+.box:hover{
+    background:greenyellow;
+    color: blue;
+}

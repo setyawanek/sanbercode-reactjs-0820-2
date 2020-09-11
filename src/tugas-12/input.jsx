@@ -97,16 +97,18 @@ class BuahBuahan extends Component {
           <table>
             <thead>
               <tr>
-                <td>Nama</td>
-                <td>Harga</td>
-                <td>Berat</td>
-                <td>Aksi</td>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Berat</th>
+                <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
               {this.state.dataHargaBuah.map((el, index) => {
                 return (
                   <tr key={index}>
+                    <td>{index + 1}</td>
                     <td> {el.nama} </td>
                     <td> {el.harga}</td>
                     <td> {el.berat / 1000} kg</td>

@@ -43,16 +43,20 @@
 }
 
 .container{
-  padding: 10px;
+  padding: auto;
   text-align: center;
+  width: 100%;
+  
 }
 
 .form-border{
-  padding: 10px;
+  padding: 100px;
+  margin-top: 10px;
   border: 1px solid black;
   border-radius: 10px;
   display: inline-block;
   text-align: left;
+  margin-bottom: 1em;
 }
 
 .text-center{
@@ -61,10 +65,11 @@
 
 .label{
   font-weight: bold;
+  
 }
 
 button{
-  border-radius: 10px;
+  border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -84,6 +89,7 @@ button{
 .Daftarbuah th {
   background-color: #aaaaaa;
 }
+
 .Daftarbuah td {
   background-color:#ff7f50;
 }

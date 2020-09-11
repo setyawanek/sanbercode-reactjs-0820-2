@@ -82,7 +82,7 @@ const DaftarBuahForm = () => {
     <>
     <div className="Daftarbuah">
 
-      <h1>Form Daftar Harga Buah</h1>
+      <h2>Form Buah-Buahan</h2>
 
       <form onSubmit={handleSubmit}>
         <label>Nama:</label>
@@ -90,7 +90,7 @@ const DaftarBuahForm = () => {
         <label>Harga:</label>
         <input type="text" name="price" value={input.price} onChange={handleChange} />
         <label>Berat (dalam gram):</label>
-        <input type="number" name="weight" value={input.weight} onChange={handleChange} />
+        <input type="number" name="weight" value={input.weight} onChange={handleChange} /><br/>
         <button>submit</button>
       </form>
     </div>

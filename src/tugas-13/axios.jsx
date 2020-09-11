@@ -3,7 +3,7 @@ import axios from "axios"
 import './input.css'
 
 
-const BuahBuahan = () => {
+const BuahBuahan2 = () => {
   const [dataHargaBuah, setDataHargaBuah] = useState(null)
   const [inputNama, setInputNama] = useState('')
   const [inputHarga, setInputHarga] = useState('')
@@ -99,10 +99,11 @@ const BuahBuahan = () => {
         <table>
           <thead>
             <tr>
-              <td>Nama</td>
-              <td>Harga</td>
-              <td>Berat</td>
-              <td>Aksi</td>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Harga</th>
+              <th>Berat</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -110,6 +111,7 @@ const BuahBuahan = () => {
               dataHargaBuah !== null && dataHargaBuah.map((el, index) => {
                 return (
                   <tr key={index}>
+                    <td> {index + 1} </td>
                     <td> {el.nama} </td>
                     <td> {el.harga}</td>
                     <td> {el.berat / 1000} kg</td>
@@ -123,18 +125,21 @@ const BuahBuahan = () => {
           </tbody>
         </table>
       </div>
+      
+      <div className="Daftarbuah">
+        <h2>Form Buah-Buahan</h2>
 
-      <h2>Form Buah-Buahan</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Nama Buah</label>
-        <input type="text" required value={inputNama} onChange={handleChangeNama} />
-        <label>Harga Buah</label>
-        <input type="number" required value={inputHarga} onChange={handleChangeHarga} />
-        <label>Berat Buah [dalam gram]</label>
-        <input type="number" required value={inputBerat} onChange={handleChangeBerat} /> <br />
-        <button>Submit</button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <label>Nama Buah</label>
+          <input type="text" required value={inputNama} onChange={handleChangeNama} />
+          <label>Harga Buah</label>
+          <input type="number" required value={inputHarga} onChange={handleChangeHarga} />
+          <label>Berat Buah [dalam gram]</label>
+          <input type="number" required value={inputBerat} onChange={handleChangeBerat} /> <br/>
+          <button>Submit</button>
+        </form>
+      </div>
     </>
   )
 }
-export default BuahBuahan
+export default BuahBuahan2
